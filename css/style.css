@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    /* Primary Colors */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* Secondary Colors */
+    --dark-blue: hsl(212, 21%, 14%);
+    --grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--cream);
+    color: var(--grayish-blue);
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card Component Styles */
+.card {
+    background-color: var(--white);
+    max-width: 375px;
+    width: 90%;
+    border-radius: 8px;
+}
+.card img {
+    border-radius: 8px 8px 0 0;
+}
+.card__details {
+    padding: 1.4rem;
+}
+.small__heading {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: .5rem;
+}
+.big__heading {
+    font-family: 'Fraunces', serif;
+    color: var(--dark-blue);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+.card__description {
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+.perfume__price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.perfume__price span:first-child {
+    color: var(--dark-cyan);
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.perfume__price span:last-child {
+    text-decoration: line-through;
+}
+.card__btn {
+    width: 100%;
+    border: none;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: .9rem;
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+}
