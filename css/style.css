@@ -100,3 +100,7 @@ img {
     border-radius: .5rem;
     margin-bottom: .5rem;
 }
+.card__btn:hover {
+    cursor: pointer;
+    background-color: hsl(156, 42%, 18%);
+}
