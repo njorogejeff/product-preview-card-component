@@ -24,7 +24,7 @@ body {
     font-weight: 500;
     background-color: var(--cream);
     color: var(--grayish-blue);
-    max-width: 100%;
+    max-width: 375px;
     height: 100vh;
     margin: 0 auto;
     display: flex;
